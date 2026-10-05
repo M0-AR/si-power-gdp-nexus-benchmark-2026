@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SI Power-GDP Nexus — Live-Verified Benchmark 2026</title>
+<meta name="description" content="Can 1% more power really mean 1% more GDP? Live-verified benchmark of the superintelligence industrial strategy: energy, jobs, orbital compute, agent safety, wealth."/>
+<style>
+:root{--bg:#0b1020;--card:#141b33;--ink:#eaf0ff;--muted:#9fb0d8;--accent:#6ee7ff;--accent2:#a78bfa;--good:#34d399;--warn:#fbbf24;--bad:#f87171;--line:#243056}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 600px at 20% -10%,#1b2a5e 0%,transparent 60%),radial-gradient(1000px 500px at 90% 0%,#3b1d6e 0%,transparent 55%),var(--bg);color:var(--ink)}
+a{color:var(--accent)}header{max-width:1100px;margin:0 auto;padding:56px 24px 12px}
+.badge{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 12px;margin:4px 6px 4px 0;font-size:12px;color:var(--muted);background:rgba(255,255,255,.03)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;max-width:1100px;margin:0 auto;padding:12px 24px 8px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:18px;padding:22px}
+h1{font-size:44px;line-height:1.05;margin:10px 0}h2{font-size:26px;margin:34px 0 10px}h3{font-size:18px;margin:18px 0 8px}
+p,li{color:#d6deff;line-height:1.65;font-size:15.5px}.muted{color:var(--muted)}
+.ceo{background:linear-gradient(135deg,#0ea5e9 0%,#8b5cf6 60%,#ec4899 100%);border-radius:18px;padding:26px;color:white}
+.ceo p{color:white}.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+@media(max-width:900px){.kpi{grid-template-columns:repeat(2,1fr)}}
+.kpi div{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:14px}
+.kpi b{font-size:22px;display:block}table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600}tr:hover td{background:rgba(255,255,255,.02)}
+.pill{display:inline-block;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}
+.ok{background:rgba(52,211,153,.15);color:var(--good);border:1px solid rgba(52,211,153,.4)}
+.mid{background:rgba(251,191,36,.14);color:var(--warn);border:1px solid rgba(251,191,36,.4)}
+.no{background:rgba(248,113,113,.14);color:var(--bad);border:1px solid rgba(248,113,113,.4)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:900px){.grid2{grid-template-columns:1fr}}
+pre{background:#0a0f22;border:1px solid var(--line);border-radius:12px;padding:14px;overflow:auto;font-size:13px;color:#c8f5ff}
+.btn{display:inline-block;background:var(--accent);color:#04202a;font-weight:800;border-radius:12px;padding:12px 18px;text-decoration:none;margin:6px 8px 6px 0}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.wrap{max-width:1100px;margin:0 auto;padding:8px 24px 60px}
+footer{border-top:1px solid var(--line);padding:22px;text-align:center;color:var(--muted);font-size:13px}
+canvas{max-width:100%}.toc a{display:block;padding:4px 0}.note{border-left:4px solid var(--accent);padding:10px 14px;background:rgba(110,231,255,.07);border-radius:0 12px 12px 0}
+img.demo{width:100%;border-radius:14px;border:1px solid var(--line)}
+.video{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;border:1px solid var(--line)}
+.video iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header>
+<span class="badge">MIT • live-verified 2026-10-05</span>
+<span class="badge">Docker one-command repro</span>
+<span class="badge">7 experiments • 13 claims • 4 PhD gaps</span>
+<span class="badge">GitHub Pages site — share this URL</span>
+<h1>From Gigawatts to GDP:<br/>does power really drive superintelligence wealth?</h1>
+<p class="muted">A beautiful, beginner-friendly, fully reproducible check of the “win superintelligence with energy + chips + safety + towns + space” plan — tested against real electricity, GDP, launch, safety-code, and market numbers.</p>
+<p>
+<a class="btn" href="#quickstart">Run it in 2 minutes</a>
+<a class="btn ghost" href="#ceo">CEO summary (30 sec)</a>
+<a class="btn ghost" href="#demo">Watch demo</a>
+</p>
+</header>
+
+<div class="hero">
+<div class="card ceo" id="ceo">
+<h2 style="margin-top:0">CEO summary — the 30-second answer</h2>
+<p><b>Power math is real, wealth is real, orbital dreams are early, jobs need honest counting.</b></p>
+<div class="kpi">
+<div><b>517 GW</b>US avg power (4536 TWh ÷ 8760 h). 5.18 GW = 1%.</div>
+<div><b>$56.6B/GW</b>Recomputed 1% GDP per GW vs $60B claimed. Math ✓, causality ✗.</div>
+<div><b>2.33×</b>China vs US (not 3×). Still dominant, still ⅓ of world.</div>
+<div><b>$7.11T</b>Combined listed value at check (NVDA $5.65T + TSLA $1.46T).</div>
+</div>
+<p>Bottom line: build power + chips + safety + towns. Count construction jobs separately from permanent jobs. Treat space solar as R&amp;D, not 2027 grid relief. Use safety tooling that is already open-source today.</p>
+</div>
+<div class="card">
+<h3 style="margin-top:0">What you get here</h3>
+<ul>
+<li><b>Scorecard:</b> 13 claims graded 0–100 with live numbers.</li>
+<li><b>7 tiny experiments</b> you can re-run — no API keys.</li>
+<li><b>4 hidden patterns</b> ready to become papers.</li>
+<li><b>Charts + screenshots + demo video</b> below.</li>
+<li><b>Copy-paste commands</b> that work on a clean machine.</li>
+</ul>
+<div class="note"><b>New here?</b> Start at <a href="#beginner" style="color:white">🌱 Beginner guide</a>. You need zero background. If you can copy one command, you can verify every number on this page.</div>
+</div>
+</div>
+
+<div class="wrap">
+<h2>Contents</h2>
+<div class="toc">
+<a href="#beginner">🌱 Beginner guide — read this and you are a professional</a>
+<a href="#demo">🎬 Demo — screenshots + video</a>
+<a href="#features">✨ Features — what this repo does</a>
+<a href="#stories">👥 User stories — who uses it and how</a>
+<a href="#numbers">📊 Numbers — live-verified results</a>
+<a href="#charts">📈 Charts — see the gap</a>
+<a href="#patterns">🔍 Hidden patterns — the PhD gold</a>
+<a href="#quickstart">⚡ Quickstart — 2 minutes</a>
+<a href="#pages">🌐 GitHub Pages — how this site works</a>
+<a href="#structure">🗂️ Repo structure</a>
+<a href="#repro">🔁 Reproduce &amp; extend</a>
+<a href="#limit">⚠️ Limits — honest science</a>
+<a href="#license">📄 License &amp; cite</a>
+</div>
+
+<h2 id="beginner">🌱 Beginner guide — read this and you are a professional</h2>
+<div class="card">
+<h3>Think step by step (the only method you need)</h3>
+<ol>
+<li><b>What is claimed?</b> Example: “5 extra gigawatts = 1% more GDP.” Write the numbers down.</li>
+<li><b>What public number would prove it?</b> US electricity per year + US GDP per year.</li>
+<li><b>Fetch that number from an official place.</b> We use electricity statistics + national accounts + live market prices. Every fetch logs its web address + time.</li>
+<li><b>Do the division yourself.</b> 4536 TWh ÷ 8760 hours = 517 GW. 1% = 5.18 GW. $29.3T ÷ 100 = $293B. $293B ÷ 5.18 = $56.6B per GW. Now compare to $60B. Close on math, open on cause.</li>
+<li><b>Keep both sides.</b> Good research shows the best argument <i>for</i> and <i>against</i>. Example: towns gain tax + construction jobs <i>but</i> households near data centers paid +3.1% more for power.</li>
+<li><b>Make it re-runnable.</b> One command re-downloads + re-computes. If it fails, it saves the error instead of hiding it.</li>
+</ol>
+<p><b>Words in plain English:</b> <i>Gigawatt (GW)</i> = a billion watts, power at one moment. <i>Terawatt-hour (TWh)</i> = energy over a year. Divide TWh by 8760 hours to get average GW. <i>SI factory</i> = data center that produces valuable work, not just stores files. <i>Containment</i> = what the agent is allowed to touch. <i>Monitoring</i> = watching it continuously with a separate chip.</p>
+<p class="muted">After this section you know more than most interview candidates: you can explain GW vs TWh, why $/GW is accounting not proof, why construction jobs ≠ permanent jobs, and why space solar wins physics but loses logistics today.</p>
+</div>
+
+<h2 id="demo">🎬 Demo — screenshots + video</h2>
+<div class="grid2">
+<div class="card">
+<h3>Screenshot — this page</h3>
+<img class="demo" src="../assets/preview.png" alt="Preview of this GitHub Pages site with scorecard and charts" onerror="this.outerHTML='<p class=muted>Screenshot will appear at assets/preview.png after you run: python tools/make_charts.py + python tools/capture.py. This page still fully works without it.</p>'"/>
+<p class="muted">Captured automatically (see <code>tools/capture.py</code>). Stored in-repo so README works offline.</p>
+</div>
+<div class="card">
+<h3>Charts — generated, not hand-drawn</h3>
+<img class="demo" src="../assets/charts.png" alt="Generated charts: US vs China power, $ per GW, benchmark scores" onerror="this.outerHTML='<p class=muted>Run python tools/make_charts.py to generate assets/charts.png</p>'"/>
+<p class="muted">Every bar = a live number in <code>data/processed/*.json</code>.</p>
+</div>
+</div>
+<div class="card" style="margin-top:16px">
+<h3>Video walkthrough (2 min)</h3>
+<p>GitHub READMEs play GIFs natively and link videos via thumbnail. We ship both:</p>
+<ul>
+<li><b>Option A (no upload):</b> play <code>assets/demo.gif</code> right in README.</li>
+<li><b>Option B (YouTube):</b> click thumbnail → opens video. Replace <code>VIDEO_ID</code> with your upload.</li>
+</ul>
+<pre>[![2-min demo](assets/preview.png)](https://www.youtube.com/watch?v=VIDEO_ID)
+&lt;!-- GIF fallback (autoplays in README) --&gt;
+![demo](assets/demo.gif)</pre>
+<div class="video">
+<a href="https://www.youtube.com/watch?v=VIDEO_ID" style="display:block;text-align:center;padding:60px">▶ Click to watch 2-min demo (replace VIDEO_ID after upload)</a>
+</div>
+<p class="muted">How to record yours: run the quickstart, record 60–90 s (terminal + this page), keep GIF &lt; 8 MB, 15 fps, 900 px wide. See <code>docs/RECORDING.md</code>.</p>
+</div>
+
+<h2 id="features">✨ Features — what this repo does</h2>
+<div class="grid2">
+<div class="card"><h3>1) Claim scorecard (13 claims)</h3><p>Each claim: verbatim text, verdict, evidence, score 0–100 (evidence 40 + live 30 + falsifiability 15 + novelty 15). Strongest: open safety tooling (93). Weakest: launch-rate (53–55).</p></div>
+<div class="card"><h3>2) 7 live experiments</h3><p>E1 power→GDP, E2 China gap, E3 compute-per-watt, E4 jobs, E5 orbital Fermi, E6 safety repro, E7 market wealth. Sequential fetches, URL+time logged, cached fallback so offline still passes.</p></div>
+<div class="card"><h3>3) Docker one-command</h3><p><code>docker compose up --build research</code> runs tests + benchmark. Notebook + paper services included. No keys, no secrets.</p></div>
+<div class="card"><h3>4) Web preview (this page)</h3><p>GitHub Pages-ready <code>docs/preview.html</code>. Enable Pages → share link → anyone reads results without installing anything.</p></div>
+<div class="card"><h3>5) Charts + screenshots + video slots</h3><p>Generated PNGs in <code>assets/</code>, auto-captured screenshot, GIF/YouTube demo pattern that actually renders on GitHub.</p></div>
+<div class="card"><h3>6) Paper draft</h3><p><code>paper/PAPER.md</code> + PhD-ready README: abstract, methods, results, 4 hidden patterns, limits, refs.</p></div>
+</div>
+
+<h2 id="stories">👥 User stories — who uses it and how</h2>
+<table><tr><th>Persona</th><th>Goal</th><th>Path (5 min)</th></tr>
+<tr><td><b>Student</b> — first research repo</td><td>Understand GW, GDP, jobs without jargon</td><td>Read 🌱 Beginner → run 1 command → change one number → see charts update</td></tr>
+<tr><td><b>Job candidate</b> — interview prep</td><td>Sound expert on AI energy debate</td><td>Memorize CEO 4 numbers + 1 caveat each; quote ratepayer wedge + Fermi</td></tr>
+<tr><td><b>Policy analyst</b> — town negotiation</td><td>Separate construction vs permanent jobs</td><td>Use E4 four-metric table: jobs-build, jobs-operate, $tax, ¢-penalty</td></tr>
+<tr><td><b>Engineer</b> — agent safety</td><td>Ship contained agents</td><td>Follow E6: sandbox + policy + separate-chip monitor; measure time-to-prod</td></tr>
+<tr><td><b>Founder / investor</b> — space vs ground</td><td>Avoid hype trap</td><td>Use E5 Fermi: flights/yr needed vs demonstrated; price carbon</td></tr>
+<tr><td><b>Researcher</b> — PhD extension</td><td>Find novel gap</td><td>Pick H1–H4; each has falsifier + dataset + 12-mo plan</td></tr>
+<tr><td><b>Maintainer</b> — showcase repo</td><td>Best-MIT-repo polish</td><td>Enable Pages (below), upload demo, attach JSON as release assets</td></tr>
+</table>
+
+<h2 id="numbers">📊 Numbers — live-verified results</h2>
+<table><tr><th>Claim</th><th>Live check</th><th>Verdict</th></tr>
+<tr><td>US avg ≈500 GW</td><td>4536 TWh ÷ 8760 = <b>517.8 GW</b></td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>China ≈3× US</td><td>10573 ÷ 4536 = <b>2.33×</b> (28.7% high)</td><td><span class="pill mid">PARTIALLY HIGH</span></td></tr>
+<tr><td>5 GW = $300B → $60B/GW</td><td>5.18 GW = $293B → <b>$56.6B/GW</b></td><td><span class="pill mid">MATH ✓ CAUSE ✗</span></td></tr>
+<tr><td>10 GW = 25% of additions</td><td>Implies 40 GW/yr additions (optimistic)</td><td><span class="pill mid">NEEDS QUEUE</span></td></tr>
+<tr><td>10–20 GW/yr → 1M jobs</td><td>Build flow ✓, operate 6–16k; +3.1% rate penalty</td><td><span class="pill mid">MIXED</span></td></tr>
+<tr><td>Starship orbital + 26× V3</td><td>Flight 14 Sep 28 2026</td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>H100 in orbit + TPU</td><td>Demo, not cloud</td><td><span class="pill mid">DIRECTIONAL</span></td></tr>
+<tr><td>200 GW/yr space solar</td><td>Needs ~2000 flights/yr; weekly = 52</td><td><span class="pill no">RATE FAILS</span></td></tr>
+<tr><td>Safety: containment + chip monitor</td><td>Open-source runtime + DPU watchdog live</td><td><span class="pill ok">CONFIRMED</span></td></tr>
+<tr><td>$5T combined wealth</td><td><b>$7.11T</b> (NVDA $5.65T + TSLA $1.46T)</td><td><span class="pill ok">CONSERVATIVE ✓</span></td></tr>
+<tr><td>Clean funded without subsidy</td><td>Tax credits + loans remain material</td><td><span class="pill no">OVERSTATED</span></td></tr>
+</table>
+<p class="muted">Sources: national electricity review 2026, world development indicators, live market prices, launch provider updates, safety platform release + code repo, contemporaneous business press, peer-reviewed orbital-carbon and labor-rate studies. Full refs in README + paper.</p>
+
+<h2 id="charts">📈 Charts — see the gap</h2>
+<div class="grid2">
+<div class="card"><h3>US vs China electricity (TWh, 2025)</h3><canvas id="c1" height="220"></canvas><p class="muted">2.33×, not 3×. Direction right, scalar high.</p></div>
+<div class="card"><h3>Benchmark scores (0–100)</h3><canvas id="c2" height="220"></canvas><p class="muted">Safety + power math strongest; orbital rate weakest.</p></div>
+</div>
+<div class="card" style="margin-top:16px"><h3>$ per GW-year</h3><canvas id="c3" height="160"></canvas><p class="muted">$56.6B recomputed vs $60B claimed. Accounting reproduces; causality needs panel study.</p></div>
+
+<h2 id="patterns">🔍 Hidden patterns — the PhD gold</h2>
+<div class="grid2">
+<div class="card"><h3>H1. Fossil-peak coincidence</h3><p>2025: fossil fell in <b>both</b> China (−56) and India (−52 TWh) — first joint fall this century — while solar met 75% of demand growth. The power race starts <i>after</i> the peak, not during a boom.</p></div>
+<div class="card"><h3>H2. Ratepayer wedge</h3><p>Counties with data centers pay <b>+3.1% more</b> residential. Prosperity = tax + construction; penalty = bills + water. Always report 4 numbers together.</p></div>
+<div class="card"><h3>H3. Orbital carbon flip</h3><p>“Clean space solar” flips to <b>up to 10× carbon</b> once launch + reentry counted. Advantage = capacity factor + learning, not carbon.</p></div>
+<div class="card"><h3>H4. Judgment tax</h3><p>Over-cautious assistants refuse defender-like actions (the “knife” problem). Measure refusal-as-cost on dual-use tasks.</p></div>
+</div>
+
+<h2 id="quickstart">⚡ Quickstart — 2 minutes</h2>
+<pre>git clone &lt;your-fork-url&gt; si-power-gdp-nexus-benchmark-2026
+cd si-power-gdp-nexus-benchmark-2026
+pip install -r requirements.txt
+python experiments/run_all.py
+pytest -q && python benchmarks/benchmark_suite.py
+# Docker alternative:
+docker compose up --build research</pre>
+<p>Outputs land in <code>data/processed/*.json</code>. No keys. If network flaps, cached snapshots keep tests green and errors are saved, not hidden.</p>
+
+<h2 id="pages">🌐 GitHub Pages — how this site works</h2>
+<div class="card">
+<ol>
+<li>Push this repo to GitHub.</li>
+<li>Go to <b>Settings → Pages → Build and deployment → Deploy from a branch</b>.</li>
+<li>Branch: <code>main</code>, folder: <code>/docs</code>. Save.</li>
+<li>Open <code>https://&lt;you&gt;.github.io/&lt;repo&gt;/preview.html</code> (this file) — share that link in README.</li>
+<li>Optional: add custom domain under Pages → Custom domain.</li>
+</ol>
+<p class="muted">Why /docs? GitHub Pages publishes a folder; keeping the site in <code>/docs</code> leaves root clean for code. <code>.nojekyll</code> disables Jekyll so plain HTML + assets serve exactly as written.</p>
+</div>
+
+<h2 id="structure">🗂️ Repo structure</h2>
+<pre>README.md  paper/PAPER.md  CITATION.cff  LICENSE (MIT)
+docker-compose.yml  Dockerfile  requirements.txt  Makefile
+src/si_nexus/  claims.py  live_data.py
+experiments/  e1..e7 + run_all.py
+benchmarks/benchmark_suite.py  tests/test_claims.py
+data/processed/*.json (live snapshots)
+docs/preview.html (this page)  docs/RECORDING.md  docs/index.html
+assets/preview.png  assets/charts.png  assets/demo.gif
+tools/make_charts.py  tools/capture.py</pre>
+
+<h2 id="repro">🔁 Reproduce &amp; extend</h2>
+<ul>
+<li>Re-run one claim: <code>python experiments/e1_power_gdp.py</code></li>
+<li>Regenerate visuals: <code>python tools/make_charts.py</code></li>
+<li>Capture screenshot: <code>python tools/capture.py</code> (headless browser → <code>assets/preview.png</code>)</li>
+<li>Add a claim in <code>src/si_nexus/claims.py</code> + test in <code>tests/</code> + score in <code>benchmarks/</code>.</li>
+<li>Publish: tag release, attach <code>data/processed/*.json</code>, paste Pages URL at README top.</li>
+</ul>
+
+<h2 id="limit">⚠️ Limits — honest science</h2>
+<ul>
+<li>Snapshot 2026-10-05; prices and GDP revise.</li>
+<li>1%→1% is accounting, not proven causality — needs state/county panel with instruments.</li>
+<li>No interconnection-queue, household-bill microdata, or 401(k) holder split — flagged, not fudged.</li>
+<li>Launch cadence and cost move fast; Fermi uses 2026 demonstrated rates.</li>
+</ul>
+
+<h2 id="license">📄 License &amp; cite</h2>
+<p>MIT — see LICENSE. If you use the numbers, cite this repo + the primary statistics (electricity review, development indicators, market prices, launch/safety releases).</p>
+<pre>@software{si_nexus_2026,
+ title={From Gigawatts to GDP: live-verified benchmark},
+ version={1.0.0}, date={2026-10-05}, license={MIT}}</pre>
+</div>
+<footer>Made for curious beginners and demanding reviewers. One command reproduces every number. • <a href="../README.md">README</a> • <a href="../paper/PAPER.md">Paper</a></footer>
+<script>
+new Chart(document.getElementById('c1'),{type:'bar',data:{labels:['United States','China'],datasets:[{data:[4536,10573],backgroundColor:['#6ee7ff','#a78bfa']}]},options:{plugins:{legend:{display:false}},scales:{y:{title:{display:true,text:'TWh (2025)'}}}}});
+new Chart(document.getElementById('c2'),{type:'bar',data:{labels:['Safety','Wealth','Power','Starship','CN gap','$/GW','H100','Jobs','Orbital','Adds'],datasets:[{data:[93,85,84,81,78,67,65,64,55,53],backgroundColor:'#34d399'}]},options:{indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{min:0,max:100}}}});
+new Chart(document.getElementById('c3'),{type:'bar',data:{labels:['Claimed $/GW','Recomputed $/GW'],datasets:[{data:[60,56.6],backgroundColor:['#fbbf24','#34d399']}]},options:{plugins:{legend:{display:false}},scales:{y:{title:{display:true,text:'$B per GW-year'}}}}});
+</script>
+</body>
+</html>
