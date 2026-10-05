@@ -26,11 +26,11 @@
 
 **Decision:** build power + chips + safety + towns, count jobs honestly, treat orbit as R&D — not 2027 grid relief.
 
-[![2-min demo — click to play](assets/preview.png)](https://www.youtube.com/watch?v=VIDEO_ID)
+![site preview — full Pages site screenshot, hosted in-repo](assets/preview.png)
 
-![demo autoplay](assets/demo.gif)
+![2-min demo — hosted here, plays directly on GitHub](assets/demo.gif)
 
-> Replace `VIDEO_ID` with your YouTube upload. GIF plays inline automatically. See `docs/RECORDING.md` for 2-minute recording recipe. Charts below are generated from live data, not hand-drawn.
+> Demo is hosted directly in this repo — no external link needed. `assets/demo.gif` autoplays inline, `assets/preview.png` is the full-page screenshot. See `docs/RECORDING.md` for how to re-record. Charts below are generated from live data, not hand-drawn.
 
 ![generated charts](assets/charts.png)
 
@@ -122,10 +122,9 @@ Every quantitative statement gets: exact wording, verdict (CONFIRMED / PARTIALLY
 `docs/preview.html` (+ `docs/index.html`) is a full interactive page with CEO summary, tables, and charts. Publish free via Pages, share the link, no install needed to read results.
 
 ### 5. Visuals that sell the result
-- `assets/preview.png` — full-page screenshot (auto-captured with headless browser).
+- `assets/preview.png` — full-page screenshot, hosted in-repo.
 - `assets/charts.png` — generated from live JSON (never hand-drawn).
-- `assets/demo.gif` — autoplays inline in README.
-- YouTube thumbnail pattern — click-to-play for narration.
+- `assets/demo.gif` — hosted in-repo, autoplays inline in README, no external upload.
 
 ### 6. Paper draft + PhD extensions
 `paper/PAPER.md` + 4 hidden patterns with falsifier + dataset + 12-month plan each.
@@ -265,7 +264,7 @@ Expected output: JSON in `data/processed/` + scores table. Compare your run to t
 | `src/si_nexus/claims.py` | Wording of claims C1–C13 (tests fail if drifted) |
 | `src/si_nexus/live_data.py` | URLs, timeout (default 30 s), user-agent |
 | `benchmarks/benchmark_suite.py` | Rubric weights (40/30/15/15) |
-| `docs/preview.html` | Site text, charts, VIDEO_ID |
+| `docs/preview.html` | Site text, charts, demo image paths |
 | `docker-compose.yml` | Services: research / notebook / paper |
 
 No environment variables required.

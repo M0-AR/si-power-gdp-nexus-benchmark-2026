@@ -126,19 +126,17 @@ img.demo{width:100%;border-radius:14px;border:1px solid var(--line)}
 </div>
 </div>
 <div class="card" style="margin-top:16px">
-<h3>Video walkthrough (2 min)</h3>
-<p>GitHub READMEs play GIFs natively and link videos via thumbnail. We ship both:</p>
+<h3>Video walkthrough (2 min) — hosted here</h3>
+<p>No external upload needed. The demo lives in this repo and plays directly on GitHub + Pages:</p>
 <ul>
-<li><b>Option A (no upload):</b> play <code>assets/demo.gif</code> right in README.</li>
-<li><b>Option B (YouTube):</b> click thumbnail → opens video. Replace <code>VIDEO_ID</code> with your upload.</li>
+<li><code>assets/demo.gif</code> — autoplays inline, no click needed.</li>
+<li><code>assets/preview.png</code> — full-page screenshot of this site.</li>
+<li><code>assets/charts.png</code> — charts generated from live numbers.</li>
 </ul>
-<pre>[![2-min demo](assets/preview.png)](https://www.youtube.com/watch?v=VIDEO_ID)
-&lt;!-- GIF fallback (autoplays in README) --&gt;
-![demo](assets/demo.gif)</pre>
-<div class="video">
-<a href="https://www.youtube.com/watch?v=VIDEO_ID" style="display:block;text-align:center;padding:60px">▶ Click to watch 2-min demo (replace VIDEO_ID after upload)</a>
-</div>
-<p class="muted">How to record yours: run the quickstart, record 60–90 s (terminal + this page), keep GIF &lt; 8 MB, 15 fps, 900 px wide. See <code>docs/RECORDING.md</code>.</p>
+<pre>![site preview](assets/preview.png)
+![2-min demo — hosted here](assets/demo.gif)</pre>
+<img class="demo" src="../assets/demo.gif" alt="2-minute demo animation hosted in-repo"/>
+<p class="muted">How to re-record yours: run the quickstart, record 60–90 s (terminal + this page), keep GIF &lt; 8 MB, 15 fps, 900 px wide. See <code>docs/RECORDING.md</code>.</p>
 </div>
 
 <h2 id="features">✨ Features — what this repo does</h2>
@@ -147,7 +145,7 @@ img.demo{width:100%;border-radius:14px;border:1px solid var(--line)}
 <div class="card"><h3>2) 7 live experiments</h3><p>E1 power→GDP, E2 China gap, E3 compute-per-watt, E4 jobs, E5 orbital Fermi, E6 safety repro, E7 market wealth. Sequential fetches, URL+time logged, cached fallback so offline still passes.</p></div>
 <div class="card"><h3>3) Docker one-command</h3><p><code>docker compose up --build research</code> runs tests + benchmark. Notebook + paper services included. No keys, no secrets.</p></div>
 <div class="card"><h3>4) Web preview (this page)</h3><p>GitHub Pages-ready <code>docs/preview.html</code>. Enable Pages → share link → anyone reads results without installing anything.</p></div>
-<div class="card"><h3>5) Charts + screenshots + video slots</h3><p>Generated PNGs in <code>assets/</code>, auto-captured screenshot, GIF/YouTube demo pattern that actually renders on GitHub.</p></div>
+<div class="card"><h3>5) Charts + screenshots + demo</h3><p>Generated PNGs in <code>assets/</code>, full-page screenshot, and in-repo GIF demo that plays directly on GitHub + Pages.</p></div>
 <div class="card"><h3>6) Paper draft</h3><p><code>paper/PAPER.md</code> + PhD-ready README: abstract, methods, results, 4 hidden patterns, limits, refs.</p></div>
 </div>
 
