@@ -294,8 +294,8 @@ GitHub shows HTML files as code — Pages renders them as a website. To publish 
 
 1. Push to GitHub (already done).
 2. Open **Settings → Pages → Build and deployment → Deploy from a branch**.
-3. Branch: `main`, folder: `/docs`. Save.
-4. Wait ~1-2 minutes, open `https://m0-ar.github.io/si-power-gdp-nexus-benchmark-2026/preview.html`.
+3. Branch: `main`, folder: `/docs` (recommended). Save. Root `preview.html` + `index.html` mirrors exist, so `/` (root) also works.
+4. Wait ~1-2 minutes, open `https://m0-ar.github.io/si-power-gdp-nexus-benchmark-2026/preview.html`. Fallback under root source: `https://m0-ar.github.io/si-power-gdp-nexus-benchmark-2026/docs/preview.html`.
 5. That link is also at the top of this README.
 6. Optional: Pages → Custom domain for your own URL.
 
