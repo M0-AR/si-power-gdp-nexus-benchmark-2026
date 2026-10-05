@@ -1,0 +1,101 @@
+{
+  "rubric": {
+    "evidence_strength": 40,
+    "live_repro": 30,
+    "falsifiability": 15,
+    "novelty": 15
+  },
+  "scores": [
+    {
+      "claim": "C10 OpenShell+BlueField",
+      "evidence_strength": 39,
+      "live_repro": 30,
+      "falsifiability": 14,
+      "novelty": 10,
+      "note": "Only fully OSS-repro claim",
+      "total": 93
+    },
+    {
+      "claim": "C12 $5T wealth",
+      "evidence_strength": 38,
+      "live_repro": 29,
+      "falsifiability": 13,
+      "novelty": 5,
+      "note": "Live mcap confirms, attribution caveat",
+      "total": 85
+    },
+    {
+      "claim": "C1 500GW avg",
+      "evidence_strength": 38,
+      "live_repro": 28,
+      "falsifiability": 13,
+      "novelty": 5,
+      "note": "517GW recomputed; trivially repro",
+      "total": 84
+    },
+    {
+      "claim": "C6 Starship V3 orbital",
+      "evidence_strength": 37,
+      "live_repro": 25,
+      "falsifiability": 12,
+      "novelty": 7,
+      "note": "Flight 14 confirmed",
+      "total": 81
+    },
+    {
+      "claim": "C2 China 3x",
+      "evidence_strength": 30,
+      "live_repro": 28,
+      "falsifiability": 14,
+      "novelty": 6,
+      "note": "-29% overstatement penalty",
+      "total": 78
+    },
+    {
+      "claim": "C3 1%power=1%GDP",
+      "evidence_strength": 20,
+      "live_repro": 20,
+      "falsifiability": 14,
+      "novelty": 13,
+      "note": "Math ok, causality weak \u2014 highest PhD value if fixed",
+      "total": 67
+    },
+    {
+      "claim": "C7 H100 orbit",
+      "evidence_strength": 28,
+      "live_repro": 18,
+      "falsifiability": 10,
+      "novelty": 9,
+      "note": "Demo, not production",
+      "total": 65
+    },
+    {
+      "claim": "C5 1M jobs",
+      "evidence_strength": 22,
+      "live_repro": 18,
+      "falsifiability": 13,
+      "novelty": 11,
+      "note": "Stock vs flow conflation; rate penalty hidden",
+      "total": 64
+    },
+    {
+      "claim": "C8 200GW space solar",
+      "evidence_strength": 15,
+      "live_repro": 12,
+      "falsifiability": 14,
+      "novelty": 14,
+      "note": "Fermi fails 20-40x; carbon 10x",
+      "total": 55
+    },
+    {
+      "claim": "C4 10GW=25% additions",
+      "evidence_strength": 18,
+      "live_repro": 15,
+      "falsifiability": 12,
+      "novelty": 8,
+      "note": "Needs EIA 861 + interconnection queue",
+      "total": 53
+    }
+  ],
+  "headline": "Strongest: safety OSS + power math. Weakest: orbital rate + subsidy-free clean. Biggest PhD gap: non-linear $/GW with Jevons + ratepayer wedge."
+}

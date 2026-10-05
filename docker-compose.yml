@@ -1,0 +1,27 @@
+services:
+  research:
+    build: .
+    volumes:
+      - .:/work
+      - ./data:/work/data
+    working_dir: /work
+    command: bash -c "pytest -q && python benchmarks/benchmark_suite.py"
+    environment:
+      - PYTHONPATH=/work/src
+      - TZ=UTC
+
+  notebook:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/work
+    working_dir: /work
+    command: jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token='si-nexus-2026'
+
+  paper:
+    build: .
+    volumes:
+      - .:/work
+    working_dir: /work
+    command: python experiments/run_all.py --refresh-live --out data/processed

@@ -1,0 +1,87 @@
+{
+  "us": {
+    "url": "https://api.worldbank.org/v2/country/US/indicator/NY.GDP.MKTP.CD?format=json&date=2000:2025&per_page=100",
+    "series": {
+      "2025": 30769700000000.0,
+      "2024": 29298013000000.0,
+      "2023": 27811517000000.0,
+      "2022": 26054614000000.0,
+      "2021": 23725645000000.0,
+      "2020": 21375281000000.0,
+      "2019": 21539982000000.0,
+      "2018": 20656516000000.0,
+      "2017": 19612102000000.0,
+      "2016": 18804913000000.0,
+      "2015": 18295019000000.0,
+      "2014": 17608138000000.0,
+      "2013": 16880683000000.0,
+      "2012": 16253970000000.0,
+      "2011": 15599732000000.0,
+      "2010": 15048971000000.0,
+      "2009": 14478067000000.0,
+      "2008": 14769862000000.0,
+      "2007": 14474228000000.0,
+      "2006": 13815583000000.0,
+      "2005": 13039197000000.0,
+      "2004": 12217196000000.0,
+      "2003": 11456450000000.0,
+      "2002": 10929108000000.0,
+      "2001": 10581929000000.0,
+      "2000": 10250952000000.0
+    },
+    "fetched_utc": "2026-10-05T08:49:18.371336"
+  },
+  "cn": {
+    "url": "https://api.worldbank.org/v2/country/CN/indicator/NY.GDP.MKTP.CD?format=json&date=2000:2025&per_page=100",
+    "series": {
+      "2025": 19498039388042.6,
+      "2024": 18729668435848.0,
+      "2023": 18270356654533.2,
+      "2022": 18316765021690.2,
+      "2021": 18201698719564.0,
+      "2020": 14996414166715.1,
+      "2019": 14560167101283.4,
+      "2018": 14147765772963.8,
+      "2017": 12537559062282.9,
+      "2016": 11456024084962.0,
+      "2015": 11280814787468.9,
+      "2014": 10674533168257.4,
+      "2013": 9743124247267.24,
+      "2012": 8673664713189.24,
+      "2011": 7671757207851.29,
+      "2010": 6192564874453.29,
+      "2009": 5189577094997.58,
+      "2008": 4667346414521.95,
+      "2007": 3604055822571.63,
+      "2006": 2791498472804.33,
+      "2005": 2317551298052.05,
+      "2004": 1984196551300.44,
+      "2003": 1683903309843.85,
+      "2002": 1489821682050.54,
+      "2001": 1355036590251.52,
+      "2000": 1223754919971.05
+    },
+    "fetched_utc": "2026-10-05T08:49:19.196647"
+  },
+  "analysis": {
+    "ember": {
+      "US_TWh_2025": 4536,
+      "CN_TWh_2025": 10573,
+      "source": "Ember Global Electricity Review 2026",
+      "US_GW_avg": 517.8,
+      "CN_GW_avg": 1207.0
+    },
+    "us_gdp_2024": 29298013000000.0,
+    "one_pct_gdp_usd": 292980130000.0,
+    "one_pct_power_GW": 5.18,
+    "usd_per_GW_at_1pct": 56581716879,
+    "transcript_claim": "5 GW = $300B => $60B/GW",
+    "recomputed": "5.18 GW = $293.0B => $56.6B/GW",
+    "verdict": "Math reproduces within 3%: 5.17 GW = $293B => $56.6B/GW. Causality NOT proven: GDP/power correlation confounded by productivity, prices, structure. H1 downgraded to accounting identity, not causal law.",
+    "hidden_pattern": "Intelligence-per-watt rising (Jensen GPUs + algorithms) breaks linear GW->GDP mapping; $/GW should RISE if thesis holds, but grid constraints + diminishing returns push it DOWN. Non-linearity is the PhD gap.",
+    "urls": [
+      "https://api.worldbank.org/v2/country/US/indicator/NY.GDP.MKTP.CD?format=json&date=2000:2025&per_page=100",
+      "https://api.worldbank.org/v2/country/CN/indicator/NY.GDP.MKTP.CD?format=json&date=2000:2025&per_page=100"
+    ]
+  }
+}

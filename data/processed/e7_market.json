@@ -1,0 +1,150 @@
+{
+  "nvda_live": {
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?interval=1d&range=5d",
+    "symbol": "NVDA",
+    "regularMarketPrice": 233.95,
+    "previousClose": 225.07,
+    "currency": "USD",
+    "exchange": "NMS",
+    "fetched_utc": "2026-10-05T08:49:20.693523",
+    "raw_meta": {
+      "currency": "USD",
+      "symbol": "NVDA",
+      "exchangeName": "NMS",
+      "fullExchangeName": "NasdaqGS",
+      "instrumentType": "EQUITY",
+      "firstTradeDate": 917015400,
+      "regularMarketTime": 1790971201,
+      "hasPrePostMarketData": true,
+      "gmtoffset": -14400,
+      "timezone": "EDT",
+      "exchangeTimezoneName": "America/New_York",
+      "regularMarketPrice": 233.95,
+      "regularMarketChangePercent": 1.338,
+      "fulldayPrice": 235.481,
+      "fulldayChange": 1.53,
+      "fulldayChangePercent": 0.654,
+      "fiftyTwoWeekHigh": 237.88,
+      "fiftyTwoWeekLow": 164.27,
+      "regularMarketDayHigh": 237.87,
+      "regularMarketDayLow": 233.6,
+      "regularMarketVolume": 135167817,
+      "longName": "NVIDIA Corporation",
+      "shortName": "NVIDIA Corporation",
+      "chartPreviousClose": 225.07,
+      "priceHint": 2,
+      "currentTradingPeriod": {
+        "pre": {
+          "timezone": "EDT",
+          "end": 1791207000,
+          "start": 1791187200,
+          "gmtoffset": -14400
+        },
+        "regular": {
+          "timezone": "EDT",
+          "end": 1791230400,
+          "start": 1791207000,
+          "gmtoffset": -14400
+        },
+        "post": {
+          "timezone": "EDT",
+          "end": 1791244800,
+          "start": 1791230400,
+          "gmtoffset": -14400
+        }
+      },
+      "dataGranularity": "1d",
+      "range": "5d",
+      "validRanges": [
+        "1d",
+        "5d",
+        "1mo",
+        "3mo",
+        "6mo",
+        "1y",
+        "2y",
+        "5y",
+        "10y",
+        "ytd",
+        "max"
+      ]
+    }
+  },
+  "tsla_live": {
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?interval=1d&range=5d",
+    "symbol": "TSLA",
+    "regularMarketPrice": 370.59,
+    "previousClose": 372.11,
+    "currency": "USD",
+    "exchange": "NMS",
+    "fetched_utc": "2026-10-05T08:49:21.699568",
+    "raw_meta": {
+      "currency": "USD",
+      "symbol": "TSLA",
+      "exchangeName": "NMS",
+      "fullExchangeName": "NasdaqGS",
+      "instrumentType": "EQUITY",
+      "firstTradeDate": 1277818200,
+      "regularMarketTime": 1790971200,
+      "hasPrePostMarketData": true,
+      "gmtoffset": -14400,
+      "timezone": "EDT",
+      "exchangeTimezoneName": "America/New_York",
+      "regularMarketPrice": 370.59,
+      "regularMarketChangePercent": 4.654,
+      "fulldayPrice": 371.19,
+      "fulldayChange": 0.12,
+      "fulldayChangePercent": 0.032,
+      "fiftyTwoWeekHigh": 498.83,
+      "fiftyTwoWeekLow": 297.38,
+      "regularMarketDayHigh": 374.6,
+      "regularMarketDayLow": 359.411,
+      "regularMarketVolume": 55330140,
+      "longName": "Tesla, Inc.",
+      "shortName": "Tesla, Inc.",
+      "chartPreviousClose": 372.11,
+      "priceHint": 2,
+      "currentTradingPeriod": {
+        "pre": {
+          "timezone": "EDT",
+          "start": 1791187200,
+          "end": 1791207000,
+          "gmtoffset": -14400
+        },
+        "regular": {
+          "timezone": "EDT",
+          "start": 1791207000,
+          "end": 1791230400,
+          "gmtoffset": -14400
+        },
+        "post": {
+          "timezone": "EDT",
+          "start": 1791230400,
+          "end": 1791244800,
+          "gmtoffset": -14400
+        }
+      },
+      "dataGranularity": "1d",
+      "range": "5d",
+      "validRanges": [
+        "1d",
+        "5d",
+        "1mo",
+        "3mo",
+        "6mo",
+        "1y",
+        "2y",
+        "5y",
+        "10y",
+        "ytd",
+        "max"
+      ]
+    }
+  },
+  "nvda_mcap_est": 5649190617088,
+  "tsla_mcap_est": 1463662804992,
+  "combined_est": 7112853422080,
+  "transcript": "$5T combined conservative; Jensen $5T alone; Elon ~$3.5T (overstates TSLA equity vs total value created)",
+  "verdict": "CONFIRMED: NVDA alone >$5T; combined >$7T at snapshot. $5T combined is conservative. Elon $3.5T conflates SpaceX+Tesla+excess; listed TSLA equity ~$1.46T.",
+  "hidden_pattern": "Wealth concentration vs diffusion: 401(k) exposure to 2 tickers \u2260 broad prosperity. SI-factory jobs/rate thesis (E4) is the diffusion test."
+}

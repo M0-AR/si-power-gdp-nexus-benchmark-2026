@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: The Superintelligence Power-GDP Nexus Benchmark
+version: 1.0.0
+date-released: 2026-10-05
+authors:
+  - name: SI Nexus Benchmark Consortium
+license: MIT
+repository-code: https://example.invalid/si-power-gdp-nexus-benchmark-2026
+keywords: [superintelligence, energy, GDP, data centers, orbital compute, agent safety, reproducibility]

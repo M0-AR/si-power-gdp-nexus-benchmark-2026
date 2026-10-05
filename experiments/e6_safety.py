@@ -1,0 +1,12 @@
+"""E6: Safety framework reproducibility. OpenShell + BlueField Sentry."""
+import json, pathlib, subprocess
+OUT = pathlib.Path("data/processed/e6_safety.json")
+def main():
+    res = {"openshell_repo": "NVIDIA/OpenShell Apache-2.0, install.sh + sandbox create --name demo",
+     "sentry": "Out-of-band watchdog on BlueField-4 DPU, quarantine on policy breach (NVIDIA Sep28 2026)",
+     "analogy_test": "Transcript: browser-for-websites => browser-for-agents; CC-theft => Amazon/Netflix moment. Testable: does containment+monitoring raise deployment velocity (like TLS raised e-commerce)? Metric: time-to-prod for agents with vs without OpenShell.",
+     "knife_critique": "Jensen steak-knife: over-judgmental SI refuses defender-like actions. Implication: values/judgment is capability tax. Benchmark: defender-task success rate under strict vs permissive policy.",
+     "repro_steps": ["curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh", "openshell sandbox create --name demo", "run OpenCode+OpenRouter agent, approve access, observe prover flags"],
+     "verdict": "Only claim in transcript fully OSS-reproducible today. Joint-declaration audit layer (internal controls + internal audit + external audit + best-practice sharing) maps 1:1 to OpenShell gateway/supervisor/sandbox + Sentry."}
+    OUT.parent.mkdir(parents=True, exist_ok=True); OUT.write_text(json.dumps(res, indent=2)); print(json.dumps(res, indent=2))
+if __name__ == "__main__": main()
