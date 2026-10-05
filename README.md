@@ -7,7 +7,7 @@
 
 **One sentence:** this repo checks whether more electricity really means more wealth in the age of superintelligence — with real numbers you can re-run in 2 minutes.
 
-**Live web version of this README:** `docs/preview.html` → enable **Settings → Pages → Deploy from a branch → main + /docs**, then share `https://<you>.github.io/<repo>/preview.html`
+**Live web version:** https://M0-AR.github.io/si-power-gdp-nexus-benchmark-2026/preview.html — if Pages is not on yet: **Settings → Pages → Deploy from a branch → main + /docs**, wait ~1 min, open that link.
 
 ---
 
@@ -192,7 +192,7 @@ Each H-pattern in `paper/PAPER.md` includes how to falsify it, which dataset to 
 ## ⚡ Quickstart
 
 ```bash
-git clone <your-fork-url> si-power-gdp-nexus-benchmark-2026
+git clone git@github.com:M0-AR/si-power-gdp-nexus-benchmark-2026.git
 cd si-power-gdp-nexus-benchmark-2026
 pip install -r requirements.txt
 python experiments/run_all.py
@@ -292,11 +292,11 @@ tools/make_charts.py  tools/capture.py  tools/make_demo.py
 
 GitHub shows HTML files as code — Pages renders them as a website. To publish this repo as a site:
 
-1. Push to GitHub.
+1. Push to GitHub (already done).
 2. Open **Settings → Pages → Build and deployment → Deploy from a branch**.
 3. Branch: `main`, folder: `/docs`. Save.
-4. Wait ~1 minute, open `https://<you>.github.io/<repo>/preview.html`.
-5. Paste that link at the top of README (already templated above).
+4. Wait ~1-2 minutes, open `https://m0-ar.github.io/si-power-gdp-nexus-benchmark-2026/preview.html`.
+5. That link is also at the top of this README.
 6. Optional: Pages → Custom domain for your own URL.
 
 `docs/.nojekyll` tells Pages to serve files exactly as written (needed for plain HTML + assets).
